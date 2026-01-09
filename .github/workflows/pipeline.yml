@@ -14,7 +14,7 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
+          username: bathub010
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and Push
@@ -22,4 +22,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: bathub010/docker-demo:latest
+          tags: bathub010/docker_demo:latest
